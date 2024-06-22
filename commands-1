@@ -1,0 +1,787 @@
+root@anjaly-VirtualBox:/home/anjaly# apt update
+Get:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Hit:2 http://ie.archive.ubuntu.com/ubuntu jammy InRelease
+Get:3 http://ie.archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+Hit:4 http://ie.archive.ubuntu.com/ubuntu jammy-backports InRelease
+Fetched 257 kB in 2s (117 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+191 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@anjaly-VirtualBox:/home/anjaly# apt install openjdk-17-jre
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  ca-certificates-java fonts-dejavu-extra java-common libatk-wrapper-java
+  libatk-wrapper-java-jni openjdk-17-jre-headless
+Suggested packages:
+  default-jre fonts-ipafont-gothic fonts-ipafont-mincho fonts-wqy-microhei
+  | fonts-wqy-zenhei
+The following NEW packages will be installed:
+  ca-certificates-java fonts-dejavu-extra java-common libatk-wrapper-java
+  libatk-wrapper-java-jni openjdk-17-jre openjdk-17-jre-headless
+0 upgraded, 7 newly installed, 0 to remove and 191 not upgraded.
+Need to get 50.6 MB of archives.
+After this operation, 201 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://ie.archive.ubuntu.com/ubuntu jammy/main amd64 java-common all 0.72build2 [6,782 B]
+Get:2 http://ie.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 openjdk-17-jre-headless amd64 17.0.11+9-1~22.04.1 [48.2 MB]
+Get:3 http://ie.archive.ubuntu.com/ubuntu jammy-updates/main amd64 ca-certificates-java all 20190909ubuntu1.2 [12.1 kB]
+Get:4 http://ie.archive.ubuntu.com/ubuntu jammy/main amd64 fonts-dejavu-extra all 2.37-2build1 [2,041 kB]
+Get:5 http://ie.archive.ubuntu.com/ubuntu jammy/main amd64 libatk-wrapper-java all 0.38.0-5build1 [53.1 kB]
+Get:6 http://ie.archive.ubuntu.com/ubuntu jammy/main amd64 libatk-wrapper-java-jni amd64 0.38.0-5build1 [49.0 kB]
+Get:7 http://ie.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 openjdk-17-jre amd64 17.0.11+9-1~22.04.1 [203 kB]
+Fetched 50.6 MB in 3s (17.9 MB/s)   
+Selecting previously unselected package java-common.
+(Reading database ... 200561 files and directories currently installed.)
+Preparing to unpack .../0-java-common_0.72build2_all.deb ...
+Unpacking java-common (0.72build2) ...
+Selecting previously unselected package openjdk-17-jre-headless:amd64.
+Preparing to unpack .../1-openjdk-17-jre-headless_17.0.11+9-1~22.04.1_amd64.deb 
+...
+Unpacking openjdk-17-jre-headless:amd64 (17.0.11+9-1~22.04.1) ...
+Selecting previously unselected package ca-certificates-java.
+Preparing to unpack .../2-ca-certificates-java_20190909ubuntu1.2_all.deb ...
+Unpacking ca-certificates-java (20190909ubuntu1.2) ...
+Selecting previously unselected package fonts-dejavu-extra.
+Preparing to unpack .../3-fonts-dejavu-extra_2.37-2build1_all.deb ...
+Unpacking fonts-dejavu-extra (2.37-2build1) ...
+Selecting previously unselected package libatk-wrapper-java.
+Preparing to unpack .../4-libatk-wrapper-java_0.38.0-5build1_all.deb ...
+Unpacking libatk-wrapper-java (0.38.0-5build1) ...
+Selecting previously unselected package libatk-wrapper-java-jni:amd64.
+Preparing to unpack .../5-libatk-wrapper-java-jni_0.38.0-5build1_amd64.deb ...
+Unpacking libatk-wrapper-java-jni:amd64 (0.38.0-5build1) ...
+Selecting previously unselected package openjdk-17-jre:amd64.
+Preparing to unpack .../6-openjdk-17-jre_17.0.11+9-1~22.04.1_amd64.deb ...
+Unpacking openjdk-17-jre:amd64 (17.0.11+9-1~22.04.1) ...
+Setting up java-common (0.72build2) ...
+Setting up fonts-dejavu-extra (2.37-2build1) ...
+Setting up libatk-wrapper-java (0.38.0-5build1) ...
+Setting up libatk-wrapper-java-jni:amd64 (0.38.0-5build1) ...
+Setting up openjdk-17-jre-headless:amd64 (17.0.11+9-1~22.04.1) ...
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/java to provid
+e /usr/bin/java (java) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jpackage to pr
+ovide /usr/bin/jpackage (jpackage) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/keytool to pro
+vide /usr/bin/keytool (keytool) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/rmiregistry to
+ provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/lib/jexec to provi
+de /usr/bin/jexec (jexec) in auto mode
+Setting up ca-certificates-java (20190909ubuntu1.2) ...
+head: cannot open '/etc/ssl/certs/java/cacerts' for reading: No such file or dir
+ectory
+Adding debian:CA_Disig_Root_R2.pem
+Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
+Adding debian:GDCA_TrustAUTH_R5_ROOT.pem
+Adding debian:TWCA_Global_Root_CA.pem
+Adding debian:DigiCert_Global_Root_G3.pem
+Adding debian:Starfield_Class_2_CA.pem
+Adding debian:HiPKI_Root_CA_-_G1.pem
+Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem
+Adding debian:TWCA_Root_Certification_Authority.pem
+Adding debian:Trustwave_Global_ECC_P256_Certification_Authority.pem
+Adding debian:Microsoft_RSA_Root_Certificate_Authority_2017.pem
+Adding debian:DigiCert_Assured_ID_Root_CA.pem
+Adding debian:Security_Communication_Root_CA.pem
+Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem
+Adding debian:SZAFIR_ROOT_CA2.pem
+Adding debian:SSL.com_EV_Root_Certification_Authority_RSA_R2.pem
+Adding debian:ANF_Secure_Server_Root_CA.pem
+Adding debian:SSL.com_Root_Certification_Authority_ECC.pem
+Adding debian:Security_Communication_RootCA2.pem
+Adding debian:DigiCert_TLS_ECC_P384_Root_G5.pem
+Adding debian:COMODO_Certification_Authority.pem
+Adding debian:E-Tugra_Certification_Authority.pem
+Adding debian:Certum_Trusted_Network_CA.pem
+Adding debian:XRamp_Global_CA_Root.pem
+Adding debian:Hongkong_Post_Root_CA_1.pem
+Adding debian:QuoVadis_Root_CA_2.pem
+Adding debian:Atos_TrustedRoot_2011.pem
+Adding debian:Trustwave_Global_Certification_Authority.pem
+Adding debian:ISRG_Root_X1.pem
+Adding debian:GlobalSign_Root_CA.pem
+Adding debian:OISTE_WISeKey_Global_Root_GC_CA.pem
+Adding debian:USERTrust_RSA_Certification_Authority.pem
+Adding debian:SecureTrust_CA.pem
+Adding debian:QuoVadis_Root_CA_2_G3.pem
+Adding debian:ePKI_Root_Certification_Authority.pem
+Adding debian:AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
+Adding debian:QuoVadis_Root_CA_3_G3.pem
+Adding debian:ISRG_Root_X2.pem
+Adding debian:NAVER_Global_Root_Certification_Authority.pem
+Adding debian:Entrust_Root_Certification_Authority_-_G4.pem
+Adding debian:Actalis_Authentication_Root_CA.pem
+Adding debian:GlobalSign_Root_R46.pem
+Adding debian:Certum_EC-384_CA.pem
+Adding debian:Certigna_Root_CA.pem
+Adding debian:COMODO_ECC_Certification_Authority.pem
+Adding debian:D-TRUST_EV_Root_CA_1_2020.pem
+Adding debian:Baltimore_CyberTrust_Root.pem
+Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
+Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
+Adding debian:vTrus_Root_CA.pem
+Adding debian:Go_Daddy_Class_2_CA.pem
+Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
+Adding debian:AffirmTrust_Commercial.pem
+Adding debian:Certum_Trusted_Network_CA_2.pem
+Adding debian:ssl-cert-snakeoil.pem
+Adding debian:GTS_Root_R4.pem
+Adding debian:USERTrust_ECC_Certification_Authority.pem
+Adding debian:certSIGN_ROOT_CA.pem
+Adding debian:AffirmTrust_Premium.pem
+Adding debian:AC_RAIZ_FNMT-RCM.pem
+Adding debian:GTS_Root_R2.pem
+Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+Adding debian:Trustwave_Global_ECC_P384_Certification_Authority.pem
+Adding debian:emSign_ECC_Root_CA_-_C3.pem
+Adding debian:Amazon_Root_CA_2.pem
+Adding debian:Certainly_Root_R1.pem
+Adding debian:E-Tugra_Global_Root_CA_RSA_v3.pem
+Adding debian:Comodo_AAA_Services_root.pem
+Adding debian:QuoVadis_Root_CA_3.pem
+Adding debian:e-Szigno_Root_CA_2017.pem
+Adding debian:Entrust_Root_Certification_Authority.pem
+Adding debian:COMODO_RSA_Certification_Authority.pem
+Adding debian:AffirmTrust_Premium_ECC.pem
+Adding debian:emSign_Root_CA_-_G1.pem
+Adding debian:Security_Communication_ECC_RootCA1.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
+Adding debian:TeliaSonera_Root_CA_v1.pem
+Adding debian:Certigna.pem
+Adding debian:UCA_Extended_Validation_Root.pem
+Adding debian:emSign_ECC_Root_CA_-_G3.pem
+Adding debian:emSign_Root_CA_-_C1.pem
+Adding debian:QuoVadis_Root_CA_1_G3.pem
+Adding debian:UCA_Global_G2_Root.pem
+Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+Adding debian:vTrus_ECC_Root_CA.pem
+Adding debian:Buypass_Class_2_Root_CA.pem
+Adding debian:TunTrust_Root_CA.pem
+Adding debian:E-Tugra_Global_Root_CA_ECC_v3.pem
+Adding debian:Amazon_Root_CA_3.pem
+Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
+Adding debian:SSL.com_Root_Certification_Authority_RSA.pem
+Adding debian:Security_Communication_RootCA3.pem
+Adding debian:Secure_Global_CA.pem
+Adding debian:AffirmTrust_Networking.pem
+Adding debian:GlobalSign_Root_CA_-_R6.pem
+Adding debian:Izenpe.com.pem
+Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+Adding debian:GlobalSign_Root_CA_-_R3.pem
+Adding debian:GTS_Root_R1.pem
+Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
+Adding debian:HARICA_TLS_ECC_Root_CA_2021.pem
+Adding debian:SecureSign_RootCA11.pem
+Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+Adding debian:SwissSign_Gold_CA_-_G2.pem
+Adding debian:HARICA_TLS_RSA_Root_CA_2021.pem
+Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
+Adding debian:DigiCert_Global_Root_G2.pem
+Adding debian:DigiCert_TLS_RSA4096_Root_G5.pem
+Adding debian:DigiCert_Global_Root_CA.pem
+Adding debian:DigiCert_Trusted_Root_G4.pem
+Adding debian:Amazon_Root_CA_4.pem
+Adding debian:Amazon_Root_CA_1.pem
+Adding debian:GTS_Root_R3.pem
+Adding debian:SwissSign_Silver_CA_-_G2.pem
+Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
+Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068_2.pem
+Adding debian:Microsoft_ECC_Root_Certificate_Authority_2017.pem
+Adding debian:IdenTrust_Commercial_Root_CA_1.pem
+Adding debian:SSL.com_EV_Root_Certification_Authority_ECC.pem
+Adding debian:Telia_Root_CA_v2.pem
+Adding debian:certSIGN_Root_CA_G2.pem
+Adding debian:D-TRUST_BR_Root_CA_1_2020.pem
+Adding debian:Buypass_Class_3_Root_CA.pem
+Adding debian:CFCA_EV_ROOT.pem
+Adding debian:DigiCert_Assured_ID_Root_G2.pem
+Adding debian:GLOBALTRUST_2020.pem
+Adding debian:Certainly_Root_E1.pem
+Adding debian:ACCVRAIZ1.pem
+Adding debian:GlobalSign_Root_E46.pem
+Adding debian:Certum_Trusted_Root_CA.pem
+Adding debian:DigiCert_Assured_ID_Root_G3.pem
+Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+Adding debian:Hongkong_Post_Root_CA_3.pem
+Adding debian:Entrust_Root_Certification_Authority_-_G2.pem
+done.
+Setting up openjdk-17-jre:amd64 (17.0.11+9-1~22.04.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for ca-certificates (20230311ubuntu0.22.04.1) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+
+done.
+done.
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Processing triggers for fontconfig (2.13.1-4.2ubuntu5) ...
+Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
+root@anjaly-VirtualBox:/home/anjaly# java --version
+openjdk 17.0.11 2024-04-16
+OpenJDK Runtime Environment (build 17.0.11+9-Ubuntu-122.04.1)
+OpenJDK 64-Bit Server VM (build 17.0.11+9-Ubuntu-122.04.1, mixed mode, sharing)
+root@anjaly-VirtualBox:/home/anjaly# wget -q https://www.postgresql.org/media/keys/ACCC4CFFF8.asc -O | sudo apt-key add -
+wget: option requires an argument -- 'O'
+wget: missing URL
+Usage: wget [OPTION]... [URL]...
+
+Try `wget --help' for more options.
+Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+gpg: no valid OpenPGP data found.
+root@anjaly-VirtualBox:/home/anjaly# wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
+Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+root@anjaly-VirtualBox:/home/anjaly# sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ 'lsb_release -Cs' -pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+-Cs -pgdg main" >> /etc/apt/sources.list.d/pgdg.list: 1: Syntax error: Unterminated quoted string
+root@anjaly-VirtualBox:/home/anjaly# sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ 'lsb_release -cs' -pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+-cs -pgdg main" >> /etc/apt/sources.list.d/pgdg.list: 1: Syntax error: Unterminated quoted string
+root@anjaly-VirtualBox:/home/anjaly# apt install wget ca-certificates -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+wget is already the newest version (1.21.2-2ubuntu1).
+wget set to manually installed.
+ca-certificates is already the newest version (20230311ubuntu0.22.04.1).
+ca-certificates set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 191 not upgraded.
+root@anjaly-VirtualBox:/home/anjaly# wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+OK
+root@anjaly-VirtualBox:/home/anjaly# sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ jammy-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+root@anjaly-VirtualBox:/home/anjaly# apt update
+Hit:1 http://ie.archive.ubuntu.com/ubuntu jammy InRelease
+Hit:2 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Hit:3 http://ie.archive.ubuntu.com/ubuntu jammy-updates InRelease
+Hit:4 http://ie.archive.ubuntu.com/ubuntu jammy-backports InRelease
+Get:5 http://apt.postgresql.org/pub/repos/apt jammy-pgdg InRelease [123 kB]
+Get:6 http://apt.postgresql.org/pub/repos/apt jammy-pgdg/main amd64 Packages [337 kB]
+Fetched 460 kB in 2s (191 kB/s)   
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+191 packages can be upgraded. Run 'apt list --upgradable' to see them.
+W: http://apt.postgresql.org/pub/repos/apt/dists/jammy-pgdg/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+N: Skipping acquire of configured file 'main/binary-i386/Packages' as repository 'http://apt.postgresql.org/pub/repos/apt jammy-pgdg InRelease' doesn't support architecture 'i386'
+root@anjaly-VirtualBox:/home/anjaly# apt install postgresql-13
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libcommon-sense-perl libjson-perl libjson-xs-perl libpq5 libtypes-serialiser-perl postgresql-client-13 postgresql-client-common
+  postgresql-common sysstat
+Suggested packages:
+  postgresql-doc-13 isag
+The following NEW packages will be installed:
+  libcommon-sense-perl libjson-perl libjson-xs-perl libpq5 libtypes-serialiser-perl postgresql-13 postgresql-client-13
+  postgresql-client-common postgresql-common sysstat
+0 upgraded, 10 newly installed, 0 to remove and 191 not upgraded.
+Need to get 18.5 MB of archives.
+After this operation, 60.4 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://ie.archive.ubuntu.com/ubuntu jammy/main amd64 libjson-perl all 4.04000-1 [81.8 kB]
+Get:2 http://apt.postgresql.org/pub/repos/apt jammy-pgdg/main amd64 postgresql-client-common all 260.pgdg22.04+1 [94.6 kB]
+Get:3 http://ie.archive.ubuntu.com/ubuntu jammy/main amd64 libcommon-sense-perl amd64 3.75-2build1 [21.1 kB]
+Get:4 http://ie.archive.ubuntu.com/ubuntu jammy/main amd64 libtypes-serialiser-perl all 1.01-1 [11.6 kB]
+Get:5 http://apt.postgresql.org/pub/repos/apt jammy-pgdg/main amd64 postgresql-common all 260.pgdg22.04+1 [240 kB]
+Get:6 http://ie.archive.ubuntu.com/ubuntu jammy/main amd64 libjson-xs-perl amd64 4.030-1build3 [87.2 kB]
+Get:7 http://ie.archive.ubuntu.com/ubuntu jammy-updates/main amd64 sysstat amd64 12.5.2-2ubuntu0.2 [487 kB]
+Get:8 http://apt.postgresql.org/pub/repos/apt jammy-pgdg/main amd64 libpq5 amd64 16.3-1.pgdg22.04+1 [217 kB]
+Get:9 http://apt.postgresql.org/pub/repos/apt jammy-pgdg/main amd64 postgresql-client-13 amd64 13.15-1.pgdg22.04+1 [1,508 kB]
+Get:10 http://apt.postgresql.org/pub/repos/apt jammy-pgdg/main amd64 postgresql-13 amd64 13.15-1.pgdg22.04+1 [15.8 MB]
+Fetched 18.5 MB in 1s (13.6 MB/s)          
+Preconfiguring packages ...
+Selecting previously unselected package libjson-perl.
+(Reading database ... 200941 files and directories currently installed.)
+Preparing to unpack .../0-libjson-perl_4.04000-1_all.deb ...
+Unpacking libjson-perl (4.04000-1) ...
+Selecting previously unselected package postgresql-client-common.
+Preparing to unpack .../1-postgresql-client-common_260.pgdg22.04+1_all.deb ...
+Unpacking postgresql-client-common (260.pgdg22.04+1) ...
+Selecting previously unselected package postgresql-common.
+Preparing to unpack .../2-postgresql-common_260.pgdg22.04+1_all.deb ...
+Adding 'diversion of /usr/bin/pg_config to /usr/bin/pg_config.libpq-dev by postgresql-common'
+Unpacking postgresql-common (260.pgdg22.04+1) ...
+Selecting previously unselected package libcommon-sense-perl:amd64.
+Preparing to unpack .../3-libcommon-sense-perl_3.75-2build1_amd64.deb ...
+Unpacking libcommon-sense-perl:amd64 (3.75-2build1) ...
+Selecting previously unselected package libtypes-serialiser-perl.
+Preparing to unpack .../4-libtypes-serialiser-perl_1.01-1_all.deb ...
+Unpacking libtypes-serialiser-perl (1.01-1) ...
+Selecting previously unselected package libjson-xs-perl.
+Preparing to unpack .../5-libjson-xs-perl_4.030-1build3_amd64.deb ...
+Unpacking libjson-xs-perl (4.030-1build3) ...
+Selecting previously unselected package libpq5:amd64.
+Preparing to unpack .../6-libpq5_16.3-1.pgdg22.04+1_amd64.deb ...
+Unpacking libpq5:amd64 (16.3-1.pgdg22.04+1) ...
+Selecting previously unselected package postgresql-client-13.
+Preparing to unpack .../7-postgresql-client-13_13.15-1.pgdg22.04+1_amd64.deb ...
+Unpacking postgresql-client-13 (13.15-1.pgdg22.04+1) ...
+Selecting previously unselected package postgresql-13.
+Preparing to unpack .../8-postgresql-13_13.15-1.pgdg22.04+1_amd64.deb ...
+Unpacking postgresql-13 (13.15-1.pgdg22.04+1) ...
+Selecting previously unselected package sysstat.
+Preparing to unpack .../9-sysstat_12.5.2-2ubuntu0.2_amd64.deb ...
+Unpacking sysstat (12.5.2-2ubuntu0.2) ...
+Setting up postgresql-client-common (260.pgdg22.04+1) ...
+Setting up libpq5:amd64 (16.3-1.pgdg22.04+1) ...
+Setting up libcommon-sense-perl:amd64 (3.75-2build1) ...
+Setting up postgresql-client-13 (13.15-1.pgdg22.04+1) ...
+update-alternatives: using /usr/share/postgresql/13/man/man1/psql.1.gz to provide /usr/share/man/man1/psql.1.gz (psql.1.gz) in auto 
+mode
+Setting up libtypes-serialiser-perl (1.01-1) ...
+Setting up libjson-perl (4.04000-1) ...
+Setting up sysstat (12.5.2-2ubuntu0.2) ...
+
+Creating config file /etc/default/sysstat with new version
+update-alternatives: using /usr/bin/sar.sysstat to provide /usr/bin/sar (sar) in auto mode
+Created symlink /etc/systemd/system/sysstat.service.wants/sysstat-collect.timer → /lib/systemd/system/sysstat-collect.timer.
+Created symlink /etc/systemd/system/sysstat.service.wants/sysstat-summary.timer → /lib/systemd/system/sysstat-summary.timer.
+Created symlink /etc/systemd/system/multi-user.target.wants/sysstat.service → /lib/systemd/system/sysstat.service.
+Setting up libjson-xs-perl (4.030-1build3) ...
+Setting up postgresql-common (260.pgdg22.04+1) ...
+Adding user postgres to group ssl-cert
+
+Creating config file /etc/postgresql-common/createcluster.conf with new version
+Building PostgreSQL dictionaries from installed myspell/hunspell packages...
+  en_us
+Removing obsolete dictionary files:
+'/etc/apt/trusted.gpg.d/apt.postgresql.org.gpg' -> '/usr/share/postgresql-common/pgdg/apt.postgresql.org.gpg'
+Created symlink /etc/systemd/system/multi-user.target.wants/postgresql.service → /lib/systemd/system/postgresql.service.
+Setting up postgresql-13 (13.15-1.pgdg22.04+1) ...
+Creating new PostgreSQL cluster 13/main ...
+/usr/lib/postgresql/13/bin/initdb -D /var/lib/postgresql/13/main --auth-local peer --auth-host md5
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "en_IE.UTF-8".
+The default database encoding has accordingly been set to "UTF8".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+fixing permissions on existing directory /var/lib/postgresql/13/main ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting default time zone ... Europe/Dublin
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+Success. You can now start the database server using:
+
+    pg_ctlcluster 13 main start
+
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.6) ...
+root@anjaly-VirtualBox:/home/anjaly# systemctl is-enabled postgresql
+enabled
+root@anjaly-VirtualBox:/home/anjaly# systemctl status postgresql
+● postgresql.service - PostgreSQL RDBMS
+     Loaded: loaded (/lib/systemd/system/postgresql.service; enabled; vendor preset: enabled)
+     Active: active (exited) since Sat 2024-06-22 14:33:01 IST; 55s ago
+   Main PID: 7413 (code=exited, status=0/SUCCESS)
+        CPU: 3ms
+
+Jun 22 14:33:01 anjaly-VirtualBox systemd[1]: Starting PostgreSQL RDBMS...
+Jun 22 14:33:01 anjaly-VirtualBox systemd[1]: Finished PostgreSQL RDBMS.
+root@anjaly-VirtualBox:/home/anjaly# -u postgres psql
+-u: command not found
+root@anjaly-VirtualBox:/home/anjaly# sudo -u postgres psql
+could not change directory to "/home/anjaly": Permission denied
+psql (13.15 (Ubuntu 13.15-1.pgdg22.04+1))
+Type "help" for help.
+
+postgres=# CREATE USER sonarqube WITH PASSWORD 'Password';
+CREATE ROLE
+postgres=# CREATE DATABASSE sonarqube OWNER sonarqube;
+ERROR:  syntax error at or near "DATABASSE"
+LINE 1: CREATE DATABASSE sonarqube OWNER sonarqube;
+               ^
+postgres=# CREATE DATABASE sonarqube OWNER sonarqube;
+CREATE DATABASE
+postgres=# GRANT ALL PRIVILEGES ON DATABASE sonarqube TO sonarqube;
+GRANT
+postgres=# \l
+                                   List of databases
+   Name    |   Owner   | Encoding |   Collate   |    Ctype    |    Access privileges    
+-----------+-----------+----------+-------------+-------------+-------------------------
+ postgres  | postgres  | UTF8     | en_IE.UTF-8 | en_IE.UTF-8 | 
+ sonarqube | sonarqube | UTF8     | en_IE.UTF-8 | en_IE.UTF-8 | =Tc/sonarqube          +
+           |           |          |             |             | sonarqube=CTc/sonarqube
+ template0 | postgres  | UTF8     | en_IE.UTF-8 | en_IE.UTF-8 | =c/postgres            +
+           |           |          |             |             | postgres=CTc/postgres
+ template1 | postgres  | UTF8     | en_IE.UTF-8 | en_IE.UTF-8 | =c/postgres            +
+           |           |          |             |             | postgres=CTc/postgres
+(4 rows)
+
+postgres=# \du
+                                   List of roles
+ Role name |                         Attributes                         | Member of 
+-----------+------------------------------------------------------------+-----------
+ postgres  | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
+ sonarqube |                                                            | {}
+
+postgres=# \q
+root@anjaly-VirtualBox:/home/anjaly# useradd -b /opt/sonarqube -s /bin/bash sonarqube
+root@anjaly-VirtualBox:/home/anjaly# nano /etc/sysctl.conf
+root@anjaly-VirtualBox:/home/anjaly# ulimit -n 131072
+root@anjaly-VirtualBox:/home/anjaly# ulimit -u 8192
+root@anjaly-VirtualBox:/home/anjaly# nano /etc/security/limits.d/99-sonarqube.conf
+root@anjaly-VirtualBox:/home/anjaly# apt install unzip software-properties-common wget
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+wget is already the newest version (1.21.2-2ubuntu1).
+software-properties-common is already the newest version (0.99.22.9).
+software-properties-common set to manually installed.
+unzip is already the newest version (6.0-26ubuntu3.2).
+unzip set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 191 not upgraded.
+root@anjaly-VirtualBox:/home/anjaly# wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.6.1.59531.zip
+--2024-06-22 14:47:05--  https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.6.1.59531.zip
+Resolving binaries.sonarsource.com (binaries.sonarsource.com)... 3.162.140.59, 3.162.140.99, 3.162.140.21, ...
+Connecting to binaries.sonarsource.com (binaries.sonarsource.com)|3.162.140.59|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 290033351 (277M) [binary/octet-stream]
+Saving to: ‘sonarqube-9.6.1.59531.zip’
+
+sonarqube-9.6.1.59531.zip        100%[==========================================================>] 276.60M  19.8MB/s    in 13s     
+
+2024-06-22 14:47:18 (21.6 MB/s) - ‘sonarqube-9.6.1.59531.zip’ saved [290033351/290033351]
+
+root@anjaly-VirtualBox:/home/anjaly# unzip sonarqube-9.6.1.59531.zip
+Archive:  sonarqube-9.6.1.59531.zip
+   creating: sonarqube-9.6.1.59531/
+  inflating: sonarqube-9.6.1.59531/dependency-license.json  
+   creating: sonarqube-9.6.1.59531/bin/
+   creating: sonarqube-9.6.1.59531/bin/windows-x86-64/
+  inflating: sonarqube-9.6.1.59531/bin/windows-x86-64/SonarService.bat  
+   creating: sonarqube-9.6.1.59531/bin/windows-x86-64/lib/
+  inflating: sonarqube-9.6.1.59531/bin/windows-x86-64/lib/SonarServiceWrapper.exe  
+  inflating: sonarqube-9.6.1.59531/bin/windows-x86-64/lib/find_java.bat  
+   creating: sonarqube-9.6.1.59531/bin/winsw-license/
+  inflating: sonarqube-9.6.1.59531/bin/winsw-license/LICENSE.txt  
+   creating: sonarqube-9.6.1.59531/temp/
+  inflating: sonarqube-9.6.1.59531/temp/README.txt  
+  inflating: sonarqube-9.6.1.59531/COPYING  
+   creating: sonarqube-9.6.1.59531/logs/
+  inflating: sonarqube-9.6.1.59531/logs/README.txt  
+   creating: sonarqube-9.6.1.59531/extensions/
+   creating: sonarqube-9.6.1.59531/extensions/jdbc-driver/
+   creating: sonarqube-9.6.1.59531/extensions/jdbc-driver/oracle/
+  inflating: sonarqube-9.6.1.59531/extensions/jdbc-driver/oracle/README.txt  
+   creating: sonarqube-9.6.1.59531/extensions/plugins/
+  inflating: sonarqube-9.6.1.59531/extensions/plugins/README.txt  
+   creating: sonarqube-9.6.1.59531/data/
+  inflating: sonarqube-9.6.1.59531/data/README.txt  
+   creating: sonarqube-9.6.1.59531/elasticsearch/
+   creating: sonarqube-9.6.1.59531/elasticsearch/lib/
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/elasticsearch-7.17.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/java-version-checker-7.17.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/elasticsearch-launchers-7.17.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/elasticsearch-x-content-7.17.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/elasticsearch-lz4-7.17.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/elasticsearch-cli-7.17.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/elasticsearch-core-7.17.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/elasticsearch-secure-sm-7.17.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/elasticsearch-geo-7.17.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/lucene-core-8.11.1.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/lucene-analyzers-common-8.11.1.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/lucene-backward-codecs-8.11.1.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/lucene-grouping-8.11.1.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/lucene-highlighter-8.11.1.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/lucene-join-8.11.1.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/lucene-memory-8.11.1.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/lucene-misc-8.11.1.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/lucene-queries-8.11.1.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/lucene-queryparser-8.11.1.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/lucene-sandbox-8.11.1.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/lucene-spatial3d-8.11.1.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/lucene-suggest-8.11.1.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/hppc-0.8.1.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/joda-time-2.10.10.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/t-digest-3.2.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/HdrHistogram-2.1.9.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/log4j-api-2.17.1.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/elasticsearch-log4j-7.17.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/jna-5.10.0.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/elasticsearch-plugin-classloader-7.17.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/snakeyaml-1.26.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/jackson-core-2.10.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/jackson-dataformat-smile-2.10.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/jackson-dataformat-yaml-2.10.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/jackson-dataformat-cbor-2.10.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/lz4-java-1.8.0.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/lib/jopt-simple-5.0.2.jar  
+   creating: sonarqube-9.6.1.59531/elasticsearch/config/
+  inflating: sonarqube-9.6.1.59531/elasticsearch/config/log4j2.properties  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/config/roles.yml  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/config/role_mapping.yml  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/config/users_roles  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/config/users  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/config/elasticsearch-plugins.example.yml  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/config/jvm.options  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/config/elasticsearch.yml  
+   creating: sonarqube-9.6.1.59531/elasticsearch/bin/
+  inflating: sonarqube-9.6.1.59531/elasticsearch/bin/elasticsearch-env-from-file  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/bin/elasticsearch-env  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/README.asciidoc  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/LICENSE.txt  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/NOTICE.txt  
+   creating: sonarqube-9.6.1.59531/elasticsearch/modules/
+   creating: sonarqube-9.6.1.59531/elasticsearch/modules/reindex/
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/reindex/httpasyncclient-4.1.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/reindex/elasticsearch-ssl-config-7.17.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/reindex/reindex-client-7.17.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/reindex/commons-codec-1.11.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/reindex/plugin-security.policy  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/reindex/httpclient-4.5.10.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/reindex/httpcore-nio-4.4.12.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/reindex/commons-logging-1.1.3.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/reindex/elasticsearch-rest-client-7.17.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/reindex/httpcore-4.4.12.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/reindex/plugin-descriptor.properties  
+   creating: sonarqube-9.6.1.59531/elasticsearch/modules/lang-painless/
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/lang-painless/antlr4-runtime-4.5.3.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/lang-painless/asm-util-7.2.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/lang-painless/asm-tree-7.2.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/lang-painless/plugin-security.policy  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/lang-painless/asm-commons-7.2.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/lang-painless/asm-analysis-7.2.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/lang-painless/plugin-descriptor.properties  
+   creating: sonarqube-9.6.1.59531/elasticsearch/modules/lang-painless/spi/
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/lang-painless/spi/elasticsearch-scripting-painless-spi-7.17.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/lang-painless/lang-painless-7.17.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/lang-painless/asm-7.2.jar  
+   creating: sonarqube-9.6.1.59531/elasticsearch/modules/analysis-common/
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/analysis-common/analysis-common-7.17.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/analysis-common/plugin-descriptor.properties  
+   creating: sonarqube-9.6.1.59531/elasticsearch/modules/transport-netty4/
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/transport-netty4/netty-codec-4.1.66.Final.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/transport-netty4/netty-handler-4.1.66.Final.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/transport-netty4/plugin-security.policy  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/transport-netty4/netty-resolver-4.1.66.Final.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/transport-netty4/netty-transport-4.1.66.Final.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/transport-netty4/plugin-descriptor.properties  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/transport-netty4/netty-common-4.1.66.Final.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/transport-netty4/transport-netty4-client-7.17.4.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/transport-netty4/netty-buffer-4.1.66.Final.jar  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/transport-netty4/netty-codec-http-4.1.66.Final.jar  
+   creating: sonarqube-9.6.1.59531/elasticsearch/modules/parent-join/
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/parent-join/plugin-descriptor.properties  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/modules/parent-join/parent-join-client-7.17.4.jar  
+   creating: sonarqube-9.6.1.59531/conf/
+  inflating: sonarqube-9.6.1.59531/conf/sonar.properties  
+   creating: sonarqube-9.6.1.59531/bin/linux-x86-64/
+  inflating: sonarqube-9.6.1.59531/bin/linux-x86-64/sonar.sh  
+   creating: sonarqube-9.6.1.59531/bin/macosx-universal-64/
+  inflating: sonarqube-9.6.1.59531/bin/macosx-universal-64/sonar.sh  
+  inflating: sonarqube-9.6.1.59531/bin/windows-x86-64/StartSonar.bat  
+  inflating: sonarqube-9.6.1.59531/bin/windows-x86-64/lib/SonarServiceWrapperTemplate.xml  
+  inflating: sonarqube-9.6.1.59531/elasticsearch/bin/elasticsearch  
+   creating: sonarqube-9.6.1.59531/lib/
+   creating: sonarqube-9.6.1.59531/lib/extensions/
+  inflating: sonarqube-9.6.1.59531/lib/extensions/sonar-csharp-plugin-8.43.0.51858.jar  
+  inflating: sonarqube-9.6.1.59531/lib/extensions/sonar-vbnet-plugin-8.43.0.51858.jar  
+  inflating: sonarqube-9.6.1.59531/lib/extensions/sonar-flex-plugin-2.7.0.2865.jar  
+  inflating: sonarqube-9.6.1.59531/lib/extensions/sonar-html-plugin-3.6.0.3106.jar  
+  inflating: sonarqube-9.6.1.59531/lib/extensions/sonar-java-plugin-7.13.0.29990.jar  
+  inflating: sonarqube-9.6.1.59531/lib/extensions/sonar-jacoco-plugin-1.1.1.1157.jar  
+  inflating: sonarqube-9.6.1.59531/lib/extensions/sonar-javascript-plugin-9.6.0.18814.jar  
+  inflating: sonarqube-9.6.1.59531/lib/extensions/sonar-php-plugin-3.24.0.8949.jar  
+  inflating: sonarqube-9.6.1.59531/lib/extensions/sonar-python-plugin-3.15.1.9817.jar  
+  inflating: sonarqube-9.6.1.59531/lib/extensions/sonar-go-plugin-1.10.0.3710.jar  
+  inflating: sonarqube-9.6.1.59531/lib/extensions/sonar-kotlin-plugin-2.10.0.1456.jar  
+  inflating: sonarqube-9.6.1.59531/lib/extensions/sonar-ruby-plugin-1.10.0.3710.jar  
+  inflating: sonarqube-9.6.1.59531/lib/extensions/sonar-scala-plugin-1.10.0.3710.jar  
+  inflating: sonarqube-9.6.1.59531/lib/extensions/sonar-xml-plugin-2.5.0.3376.jar  
+  inflating: sonarqube-9.6.1.59531/lib/extensions/sonar-config-plugin-1.2.0.267.jar  
+  inflating: sonarqube-9.6.1.59531/lib/extensions/sonar-iac-plugin-1.9.2.2279.jar  
+  inflating: sonarqube-9.6.1.59531/lib/extensions/sonar-text-plugin-1.1.0.282.jar  
+   creating: sonarqube-9.6.1.59531/lib/scanner/
+  inflating: sonarqube-9.6.1.59531/lib/scanner/sonar-scanner-engine-shaded-9.6.1.59531-all.jar  
+  inflating: sonarqube-9.6.1.59531/lib/sonar-application-9.6.1.59531.jar  
+   creating: sonarqube-9.6.1.59531/web/
+   creating: sonarqube-9.6.1.59531/web/images/
+  inflating: sonarqube-9.6.1.59531/web/images/logo.svg  
+   creating: sonarqube-9.6.1.59531/web/WEB-INF/
+   creating: sonarqube-9.6.1.59531/web/WEB-INF/classes/
+   creating: sonarqube-9.6.1.59531/web/WEB-INF/classes/com/
+   creating: sonarqube-9.6.1.59531/web/WEB-INF/classes/com/sonarsource/
+  inflating: sonarqube-9.6.1.59531/web/WEB-INF/classes/com/sonarsource/branding  
+  inflating: sonarqube-9.6.1.59531/web/images/sq-sl.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/activity-chart.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/saml.png  
+  inflating: sonarqube-9.6.1.59531/web/images/filter-large.svg  
+   creating: sonarqube-9.6.1.59531/web/images/embed-doc/
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/sq-icon.svg  
+   creating: sonarqube-9.6.1.59531/web/images/embed-doc/images/
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/visualizations.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/sonar-sources-simple.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/http-header-authentication.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/create_application.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/sonarsource-icon.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/support-information-file.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/quality-gate-status.jpeg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/add-bitbucket-project.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/inclusions.jpg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/backgroundTaskProcessingFailedIcon.jpeg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/successfulproject.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/sonar-exclusions-complex.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/cluster-dce.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/architecture-scanning.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/backgroundTaskProcessingInProgress.jpeg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/sources.jpg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/pranalysis.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/check.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/newspaper.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/add-github-project.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/youtube.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/creatingportfoliosandapps.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/rules-custom.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/long-lived-branch-concept.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/dev-cycle.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/cross.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/AzurePipelinesAnalysis.png  
+   creating: sonarqube-9.6.1.59531/web/images/embed-doc/images/alerts/
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/alerts/danger.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/alerts/info.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/alerts/wrong.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/twitter.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/github-branch-decoration.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/gear.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/community.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/executable-lines-python-exception.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/sonar-tests-simple.png  
+   creating: sonarqube-9.6.1.59531/web/images/embed-doc/images/alm/
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/alm/github.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/alm/gitlab.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/alm/bitbucket.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/alm/azure.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/sonar-inclusions-complex.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/exclusions.jpg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/version.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/rule-template-details.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/commit-info-in-code-viewer.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/sonar-sources-complex.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/rule-templates.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/webapi.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/sonar-tests-complex.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/complex.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/open.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/SQ-instance-components.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/close.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/astSample.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/short-lived-branch-concept.png  
+   creating: sonarqube-9.6.1.59531/web/images/embed-doc/images/db-copy/
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/db-copy/missing-table-not-purged.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/db-copy/summary-of-differences.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/db-copy/copy-data.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/db-copy/truncate-tables.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/db-copy/missing-table-warning.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/db-copy/version0-ok.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/db-copy/missing-table-not-copied.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/db-copy/search-tables.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/db-copy/copy-errors-shown.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/db-copy/verify-versions.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/db-copy/verify-urls.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/add-gitlab-project.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/encrypt-value.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/info.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/SonarQubeIcon.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/sonarqube-icon.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/architecture-integrate.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/simple.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/add-ADO-project.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/activate_rule_compare1.png  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/images/exclamation.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/embed-doc/twitter-icon.svg  
+   creating: sonarqube-9.6.1.59531/web/images/alm/
+  inflating: sonarqube-9.6.1.59531/web/images/alm/github.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/alm/bitbucket-white.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/alm/gitlab.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/alm/bitbucket.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/alm/azure.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/alm/github-white.svg  
+   creating: sonarqube-9.6.1.59531/web/images/tutorials/
+  inflating: sonarqube-9.6.1.59531/web/images/tutorials/manual.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/tutorials/azure-pipelines.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/tutorials/github-actions.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/tutorials/commit.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/tutorials/jenkins.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/tutorials/refresh.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/hotspot-large.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/source-code.svg  
+  inflating: sonarqube-9.6.1.59531/web/images/loading.gif  
+  inflating: sonarqube-9.6.1.59531/web/mstile-512x512.png  
+  inflating: sonarqube-9.6.1.59531/web/apple-touch-icon-precomposed.png  
+   creating: sonarqube-9.6.1.59531/web/js/
+  inflating: sonarqube-9.6.1.59531/web/js/outAQK4UFVQ.js.map  
+  inflating: sonarqube-9.6.1.59531/web/js/outAQK4UFVQ.js  
+  inflating: sonarqube-9.6.1.59531/web/js/out3HXNKQBJ.css  
+  inflating: sonarqube-9.6.1.59531/web/js/out3HXNKQBJ.css.map  
+  inflating: sonarqube-9.6.1.59531/web/apple-touch-icon-152x152.png  
+  inflating: sonarqube-9.6.1.59531/web/apple-touch-icon-60x60.png  
+  inflating: sonarqube-9.6.1.59531/web/apple-touch-icon-120x120.png  
+  inflating: sonarqube-9.6.1.59531/web/apple-touch-icon-180x180.png  
+  inflating: sonarqube-9.6.1.59531/web/apple-touch-icon-114x114.png  
+  inflating: sonarqube-9.6.1.59531/web/.htaccess  
+  inflating: sonarqube-9.6.1.59531/web/apple-touch-icon-72x72.png  
+  inflating: sonarqube-9.6.1.59531/web/apple-touch-icon-57x57.png  
+  inflating: sonarqube-9.6.1.59531/web/apple-touch-icon-76x76.png  
+  inflating: sonarqube-9.6.1.59531/web/favicon.ico  
+  inflating: sonarqube-9.6.1.59531/web/apple-touch-icon.png  
+  inflating: sonarqube-9.6.1.59531/web/WEB-INF/web.xml  
+  inflating: sonarqube-9.6.1.59531/web/apple-touch-icon-144x144.png  
+  inflating: sonarqube-9.6.1.59531/web/index.html  
+  inflating: sonarqube-9.6.1.59531/web/robots.txt  
+   creating: sonarqube-9.6.1.59531/lib/jdbc/
+   creating: sonarqube-9.6.1.59531/lib/jdbc/mssql/
+  inflating: sonarqube-9.6.1.59531/lib/jdbc/mssql/mssql-jdbc-10.2.1.jre11.jar  
+   creating: sonarqube-9.6.1.59531/lib/jdbc/postgresql/
+  inflating: sonarqube-9.6.1.59531/lib/jdbc/postgresql/postgresql-42.4.0.jar  
+   creating: sonarqube-9.6.1.59531/lib/jdbc/h2/
+  inflating: sonarqube-9.6.1.59531/lib/jdbc/h2/h2-2.1.212.jar  
+  inflating: sonarqube-9.6.1.59531/lib/sonar-shutdowner-9.6.1.59531.jar  
+   creating: sonarqube-9.6.1.59531/elasticsearch/plugins/
+root@anjaly-VirtualBox:/home/anjaly# mv sonarqube-9.6.1.59531 /opt/sonarqube
+root@anjaly-VirtualBox:/home/anjaly# chown -R sonarqube:sonarqube /opt/sonarqube
+root@anjaly-VirtualBox:/home/anjaly# nano /opt/sonarqube/conf/sonar.properties 
+root@anjaly-VirtualBox:/home/anjaly# nano /etc/systemd/system/sonarqube.service
+root@anjaly-VirtualBox:/home/anjaly# systemctl daemon-reload
+root@anjaly-VirtualBox:/home/anjaly# systemctl enable sonarqube.service
+Created symlink /etc/systemd/system/multi-user.target.wants/sonarqube.service → /etc/systemd/system/sonarqube.service.
+root@anjaly-VirtualBox:/home/anjaly# systemctl start sonarqube.service
+root@anjaly-VirtualBox:/home/anjaly# systemctl enable sonarqube.service
+root@anjaly-VirtualBox:/home/anjaly# systemctl status sonarqube.service
+● sonarqube.service - SonarQube service
+     Loaded: loaded (/etc/systemd/system/sonarqube.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sat 2024-06-22 15:03:14 IST; 3s ago
+    Process: 8951 ExecStart=/opt/sonarqube/bin/linux-x86-64/sonar.sh start (code=exited, status=0/SUCCESS)
+   Main PID: 8974 (java)
+      Tasks: 49 (limit: 4160)
+     Memory: 676.8M
+        CPU: 5.660s
+     CGroup: /system.slice/sonarqube.service
+             ├─8974 java -Xms8m -Xmx32m --add-exports=java.base/jdk.internal.ref=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UN>
+             └─8999 /usr/lib/jvm/java-17-openjdk-amd64/bin/java -XX:+UseG1GC -Djava.io.tmpdir=/opt/sonarqube/temp -XX:ErrorFile=../>
+
+Jun 22 15:03:14 anjaly-VirtualBox systemd[1]: Starting SonarQube service...
+Jun 22 15:03:14 anjaly-VirtualBox sonar.sh[8951]: /usr/bin/java
+Jun 22 15:03:14 anjaly-VirtualBox sonar.sh[8951]: Starting SonarQube...
+Jun 22 15:03:14 anjaly-VirtualBox sonar.sh[8951]: Started SonarQube.
+Jun 22 15:03:14 anjaly-VirtualBox systemd[1]: Started SonarQube service.
+
