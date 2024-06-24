@@ -32,3 +32,51 @@
    33  systemctl enable sonarqube.service
    34  systemctl status sonarqube.service
    35  history
+===================================================================================
+root@anjaly-VirtualBox:/home/anjaly/cloudgoat# history
+    1  clear
+    2  history
+    3  clear
+    4  wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli-4.6.2.2472.zip
+    5  ls
+    6  unzip sonar-scanner-cli-4.6.2.2472.zip 
+    7  nano sonar-scanner-4.6.2.2472/conf/sonar-scanner.properties 
+    8  nano ~/.bashrc
+    9  source ~/.bashrc
+   10  sonar-scanner --version
+   11  sysctl -w vm.max_map_count=262144
+   12  echo 'vm.max_map_count=262144' | sudo tee -a /etc/sysctl.conf
+   13  git clone https://github.com/anxolerd/dvpwa.git
+   14  apt install git
+   15  git clone https://github.com/anxolerd/dvpwa.git
+   16  cd dvpwa/
+   17  sonar-scanner   -Dsonar.projectKey=SONARSCAN-DVWPA   -Dsonar.sources=.   -Dsonar.host.url=http://127.0.0.1:9000   -Dsonar.login=sqp_d82269d4f316d44b32f8bf5b38bc9b556249ef54
+   18  cd ..
+   19  rm -rf dvpwa/
+   20  git clone https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application.git
+   21  cd Damn-Vulnerable-GraphQL-Application/
+   22  sonar-scanner   -Dsonar.projectKey=Project-1   -Dsonar.sources=.   -Dsonar.host.url=http://127.0.0.1:9000   -Dsonar.login=sqp_3c89e0e00ac0fbb96e62f7b6f8bb450d398fe6a0
+   23  cd ..
+   24  git clone https://github.com/RhinoSecurityLabs/cloudgoat.git
+   25  cd cloudgoat/
+   26  sonar-scanner   -Dsonar.projectKey=Project-2   -Dsonar.sources=.   -Dsonar.host.url=http://127.0.0.1:9000   -Dsonar.login=sqp_f85fffec5b07a1c8c368db63a54e0510b6aa0a42
+   27  cd ..
+   28  apt install nodejs nmp -y
+   29  apt install nodejs npm -y
+   30  cd cloudgoat/
+   31  sonar-scanner   -Dsonar.projectKey=Project-2   -Dsonar.sources=.   -Dsonar.host.url=http://127.0.0.1:9000   -Dsonar.login=sqp_f85fffec5b07a1c8c368db63a54e0510b6aa0a42
+   32  cd ..
+   33  apt update
+   34  apt upgrade -y
+   35  apt install python3 python3-pip -y
+   36  pip3 install bandit
+   37  bandit --version
+   38  ls
+   39  bandit -r Damn-Vulnerable-GraphQL-Application/ -f html -o bandit_dvga.html
+   40  chown anjaly bandit_dvga.html 
+   41  bandit -r cloudgoat/ -f html -o bandit_cloudgoat.html
+   42  chown anjaly bandit_cloudgoat.html 
+   43  cd cloudgoat/
+   44  ls
+   45  cp requirements.txt /home/anjaly/Vulnerable-Web-Application/
+   46  history
