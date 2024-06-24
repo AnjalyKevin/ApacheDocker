@@ -80,3 +80,5 @@ root@anjaly-VirtualBox:/home/anjaly/cloudgoat# history
    44  ls
    45  cp requirements.txt /home/anjaly/Vulnerable-Web-Application/
    46  history
+-------------------------------
+https://app.snyk.io/login?token=ab25b2b6-e4ec-4a01-9248-2400b7f5b048&utm_medium=cli&utm_source=cli&utm_campaign=CLI_V1_PLUGIN&utm_campaign_content=1.1291.1&os=linux&docker=false
