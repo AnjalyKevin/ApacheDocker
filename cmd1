@@ -1,0 +1,34 @@
+ 2  apt update
+    3  apt install openjdk-17-jre
+    4  java --version
+    5  wget -q https://www.postgresql.org/media/keys/ACCC4CFFF8.asc -O | sudo apt-key add -
+    6  wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
+    7  sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ 'lsb_release -Cs' -pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+    8  sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ 'lsb_release -cs' -pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+    9  apt install wget ca-certificates -y
+   10  wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+   11  sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ jammy-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+   12  apt update
+   13  apt install postgresql-13
+   14  systemctl is-enabled postgresql
+   15  systemctl status postgresql
+   16  -u postgres psql
+   17  sudo -u postgres psql
+   18  useradd -b /opt/sonarqube -s /bin/bash sonarqube
+   19  nano /etc/sysctl.conf
+   20  ulimit -n 131072
+   21  ulimit -u 8192
+   22  nano /etc/security/limits.d/99-sonarqube.conf
+   23  apt install unzip software-properties-common wget
+   24  wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.6.1.59531.zip
+   25  unzip sonarqube-9.6.1.59531.zip
+   26  mv sonarqube-9.6.1.59531 /opt/sonarqube
+   27  chown -R sonarqube:sonarqube /opt/sonarqube
+   28  nano /opt/sonarqube/conf/sonar.properties 
+   29  nano /etc/systemd/system/sonarqube.service
+   30  systemctl daemon-reload
+   31  systemctl enable sonarqube.service
+   32  systemctl start sonarqube.service
+   33  systemctl enable sonarqube.service
+   34  systemctl status sonarqube.service
+   35  history
